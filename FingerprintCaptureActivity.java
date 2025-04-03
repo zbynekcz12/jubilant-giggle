@@ -37,7 +37,12 @@ public class FingerprintCaptureActivity extends AppCompatActivity implements Sur
 
     private SurfaceView surfaceView;
     private CameraManager cameraManager;
-    private String cameraId;
+    public class FingerprintCaptureActivity {
+    public void someMethod() {
+        String cameraId = "some_value";  // local variable
+        // use cameraId
+    }
+}
     private CameraDevice cameraDevice;
     private CaptureRequest.Builder captureRequestBuilder;
     private CameraCaptureSession cameraCaptureSession;
