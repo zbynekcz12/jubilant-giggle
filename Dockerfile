@@ -1,6 +1,9 @@
 # Použití oficiálního obrazu Android SDK jako základ
 FROM openjdk:8-jdk
 
+FROM busybox
+RUN apt-get install python=2.7
+
 # Instalace potřebných nástrojů
 RUN apt-get update && apt-get install -y \
     wget=1.20.3-1ubuntu1 \
