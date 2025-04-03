@@ -3,8 +3,8 @@ FROM openjdk:8-jdk
 
 # Instalace potřebných nástrojů
 RUN apt-get update && apt-get install -y \
-    wget \
-    unzip \
+    wget=1.20.3-1ubuntu1 \
+    unzip=6.0-23ubuntu1 \
     && rm -rf /var/lib/apt/lists/*
 
 # Instalace Gradle
